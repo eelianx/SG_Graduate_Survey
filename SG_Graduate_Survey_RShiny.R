@@ -305,7 +305,7 @@ server <- function(input, output) {
   })
   # scatter chart of latest median employment rate and gross median monthly by SCHOOLS 
   output$scatterplot1 <- renderPlot({
-    ggplot(data=scat1, aes(x=median_employment_rate_overall, y=median_employment_rate_overall)) +
+    ggplot(data=scat1, aes(x=median_employment_rate_overall, y=median_gross_monthly_median)) +
     geom_point(aes(color = Reclassified_School, size=30))+
       labs(title="Latest Gross Median Monthly (SGD) and Median Employment Rate by Schools", subtitle="", y="Gross Median Monthly (SGD)", x = "Median Employment Rate")+
       theme(plot.title = element_text(hjust = 0.5, size = 24, face = "bold", color=	rgb(128,128,128,maxColorValue = 255)))
