@@ -1,0 +1,66 @@
+---
+title: "Team Biryani"
+subtitle: "for WQD7001"
+author: "EeLianChong"
+date: "15 May 2021"
+hitheme: agate 
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Team
+
+Course: WQD7001
+
+Team: Biryani
+
+Members: 
+
+- Fatimah binti Mohd Nizam (17218825)
+- Bhavya Sree Geda (s2020579)
+- Zhen Yin Lau (s2040117)
+- Ee Lian Chong (17202033)
+
+
+## Introduction
+
+Domain: Education
+
+Title: Singapore Graduate and Employment Dashboard
+
+Objective: to understand the relationship between employment rate, salary and tertiary education
+
+Data Source: <https://data.gov.sg/>
+
+Data Period: 2013 - 2018
+
+## Data Questions
+
+- What is the average employment rate and median salary?
+- Which uni produce graduates earning the highest median salary, and for which courses/school?
+- Is there a specific trend/ correlation between school/courses taken and salary? 
+- Can you recommend me a list of courses that matches my expected salary?
+
+## Shiny App Flow
+
+- Overview
+- University View
+- School View
+- Details
+- Course Recommender
+
+Shiny App: <https://eelianx.shinyapps.io/sg_graduate_survey/>
+
+## Course Recommender Computation
+
+- The CAGR (compounded Annual Growth Rate) for gross_monthly_median is computed and use as a multiplier to determine the median salary at expected graduation year.
+- CAGR = ((2018median/ 2013median)^(1/(2018-2013)))-1
+- CAGR = ((3460/3100)^(1/5))-1
+- CAGR = 0.022 or 2.2%
+
+Github: <https://github.com/eelianx/SG_Graduate_Survey>
+
+# Thank You
