@@ -324,7 +324,7 @@ server <- function(input, output) {
     plot_dat2<-dat3 %>%
       filter(year==2018)%>% 
       filter(!is.na(Reclassified_School)) %>% 
-      mutate(future_gross_monthly_median = gross_monthly_median * (1.022^(input$select5 - 2018)),x=gross_monthly_median*2) %>% 
+      mutate(future_gross_monthly_median = round(gross_monthly_median * (1.022^(input$select5 - 2018))),x=gross_monthly_median*2) %>% 
       filter(future_gross_monthly_median>=input$select6) %>% 
       arrange(desc(future_gross_monthly_median)) %>%
       select(c("Reclassified_University","university","year","Reclassified_School","degree","future_gross_monthly_median","employment_rate_overall","gross_monthly_median")) %>% 
