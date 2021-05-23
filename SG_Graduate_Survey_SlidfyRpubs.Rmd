@@ -37,13 +37,6 @@ Data Source: <https://data.gov.sg/>
 
 Data Period: 2013 - 2018
 
-## Data Questions
-
-- What is the average employment rate and median salary?
-- Which uni produce graduates earning the highest median salary, and for which courses/school?
-- Is there a specific trend/ correlation between school/courses taken and salary? 
-- Can you recommend me a list of courses that matches my expected salary?
-
 ## Shiny App Flow
 
 - Overview
@@ -53,6 +46,13 @@ Data Period: 2013 - 2018
 - Course Recommender
 
 Shiny App: <https://eelianx.shinyapps.io/sg_graduate_survey/>
+
+## Data Questions
+
+- What is the average employment rate and median salary?
+- Which university produce graduates with the highest employment rate, earning the highest median salary, and for which courses/school?
+- Is there a specific trend/ correlation between school/courses taken and salary? 
+- Can you recommend me a list of courses that matches my expected salary?
 
 ## Course Recommender Computation
 
