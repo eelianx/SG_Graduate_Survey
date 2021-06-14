@@ -17,7 +17,7 @@
 Metadata is provided here
 
 #### Data Columns, metadata provided in dataset link
-year	- year the 
+year
 university	
 school	
 degree	
@@ -29,3 +29,7 @@ gross_monthly_mean
 gross_monthly_median	
 gross_mthly_25_percentile	
 gross_mthly_75_percentile
+
+#### Learnings and Challenges
+Learnings: Rpub, Shiny, RMD etc
+We make it :)
